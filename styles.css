@@ -1,0 +1,178 @@
+/* Some normalization */
+*, ::before, ::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+input::placeholder {
+    color: rgb(131, 131, 131);
+}
+
+img {
+    height: auto;
+    width: 100%;
+}
+
+/* Utility */
+.text-center {
+    text-align: center;
+}
+
+/* Regular selectors */
+.screen {
+    min-height: 100vh;
+    display: flex;
+}
+
+.container {
+    display: flex;
+    flex-grow: 1;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+}
+ 
+.left {
+    max-width: 600px;
+}
+
+.right {
+    display: none;
+}
+
+.easy-vote {
+    margin-bottom: 3rem;
+    display: flex;
+    justify-content: center;
+}
+
+.easy-vote img {
+    
+    width: 150px;
+    height: auto;
+}
+
+.heading {
+    margin-bottom: 3rem;
+}
+
+.google-btn {
+    display: flex;
+    width: 100%;
+    gap: 1rem;
+    justify-content: center;
+    align-items: center;
+    padding: .5rem;
+    margin-bottom: 3rem;
+    border-radius: .5rem;
+    background: #fff;
+    outline: none;
+    border: 1px solid rgb(224, 224, 224);
+    box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+}
+
+.separator {
+    position: relative;
+    background: rgb(214, 214, 214);
+    margin-bottom: 3rem;
+    height: 1px;
+}
+
+.separator-text {
+    position: absolute;
+    color: rgb(214, 214, 214);
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background: #fff;
+    padding-left: .5rem;
+    padding-right: .5rem;
+}
+
+.user-input {
+    margin-bottom: 1rem;
+    padding: .5rem;
+    width: 100%;
+    outline: none;
+    border: 1px solid rgb(224, 224, 224);
+    border-radius: .25rem;
+    color: black;
+}
+
+.log-pass {
+    font-size: 12px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.checkbox-label {
+    font-size: 12px;
+    display: flex;
+    align-items: center;
+    gap: .25rem;
+}
+
+.forgot-btn {
+    font-size: 12px;
+    border: none;
+    background: none;
+    text-decoration: underline;
+}
+
+.login-btn {
+    width: 100%;
+    outline: none;
+    background: rgb(22, 26, 73);
+    color: white;
+    border-radius: .25rem;  
+    border: none;
+    padding: .5rem 0rem;
+    margin-bottom: 1rem;
+}
+
+.sign-up-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: .5rem;
+    font-size: 12px;
+}
+
+.sign-up-text {
+    color: rgb(158, 158, 158);
+}
+
+.sign-up-btn {
+    font-size: 12px;
+    border: none;
+    outline: none;
+    background: #fff;
+    text-decoration: underline;
+    color: rgb(84, 84, 207);
+}
+
+@media screen and (min-width: 768px) {
+
+    .container {
+        gap: 2rem;
+    }
+
+    .left, .right {
+        width: 50%;
+    }
+
+    .right {
+        display: block;
+        max-width: 600px;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .container {
+        gap: 5rem;
+    }
+}
